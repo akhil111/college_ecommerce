@@ -1,6 +1,21 @@
-CTYPE html>
+<DOCTYPE html>
 <head>
     
+<!-- bootstrap link code -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<!-- bootstrap code ends here -->
+
+
+
+
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     
     <style>
@@ -39,7 +54,7 @@ CTYPE html>
 
      }
 }
-       
+      
 
         
         #my-pic{
@@ -51,7 +66,7 @@ CTYPE html>
             margin-top: 59px;
         }
         
-        input[type="email"]
+       /* input[type="email"]
         
         {
             border:0;
@@ -64,7 +79,7 @@ CTYPE html>
             font-size: 22px;
             border-radius: 5px;
             
-        }
+        }*/
         
         input[type="submit"]
         
@@ -81,13 +96,13 @@ CTYPE html>
         
         }
         
-         input[type="submit"]:hover{
+        /* input[type="submit"]:hover{
          color:  #5fcf80;
              background: white;
          
          
          }
-        
+        */
         
         </style>
     
@@ -98,9 +113,59 @@ CTYPE html>
  
     <img src="http://cdn.koimoi.com/wp-content/new-galleries/2012/10/Huma-Qureshi-At-Chicken-Khurana-Recipe-Hunt-Launch-560x747.jpg" id="my-pic">
     <h1>my name is akhil , india based rails developer</h1>
-    <input type="email" placeholder="type your email">
+   <!--  <input type="email" placeholder="type your email"> -->
     
-    <input type="submit">
+   <!--  <input type="submit" name="submit" value="GET IN TOUCH"> -->
+
+
+
+<!-- BOOTSTRAP CODE BEGINS -->
+
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+
+        <p>One fine body&hellip;</p>
+        <form method ="post" action="index.php">
+       <label for="email"></label>
+       <input type="text" name="full-name">
+       <input type="text" name="email">
+       
+
+     </form>
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" class="btn btn-primary">submit details</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 </body>
 
