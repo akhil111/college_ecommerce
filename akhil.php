@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <head>
     
 <!-- bootstrap link code -->
@@ -119,49 +119,72 @@
 
 
 
-   <!-- code triggers modal  starts-->
-
-   <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
- <!-- code triggers modal  ends-->
+  <!-- bootstrap code begins -->
 
 
 
-<!-- BOOTSTRAP CODE BEGINS -->
+
+
+<!-- button to trigger modal -->
+
+
+
+<!-- button trigger code ends -->
+
+
+
+
+<!-- Button trigger modal -->
+
+
+
+
 
 <div class="container">
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- button to trigger modal -->
 
-<div class="modal fade">
-  <div class="modal-dialog">
+<a href="index.php"><button type="button"  id="#mymodal"class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+</a>
+
+<!-- button trigger code ends -->
+
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close"  data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Modal title</h4>
-      </div>
-      <div class="modal-body">
+    
+    <div class="modal-body">
 
-        <p>One fine body&hellip;</p>
-        <form method ="post" action="index.php">
-       <label for="email"></label>
-       <input type="text" name="full-name">
-       <input type="text" name="email">
-       
+     <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+ 
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+    
+    </div>
 
-     </form>
-      </div>
-      <div class="modal-footer">
-      
-        <button type="button" class="btn btn-primary">submit details</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    <!-- footer -->
 
+ <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 
@@ -171,16 +194,12 @@
 
 
 
+<!-- bootstrap code -->
 
 
-
-
-
-
-
-
-
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
     
 </body>
 
