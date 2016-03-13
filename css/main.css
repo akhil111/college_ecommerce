@@ -1,0 +1,360 @@
+
+#isis
+{
+  margin-left: 100px;
+  margin-top: 45px;
+}
+/*  css code for index.html */
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+  /*  margin: 0;*/
+  /*  background-repeat: no-repeat;
+    background-attachment: fixed;*/
+}
+
+#nav_ol li
+{
+  
+  display: inline-block;
+  list-style-type: none;
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  float: right;
+  color: pink;
+ margin-top: 15px;
+
+
+}
+
+#search_button
+{
+  background-color: #fdd922;
+    border: 1px solid #e0bc27;
+    border-radius: 0 2px 2px 0;
+    text-transform: uppercase;
+    color: #565656;
+    position: absolute;
+    line-height: 17px;
+    height: 45px;
+    cursor: pointer;
+    width: 12em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#product_search
+{
+  height: 45px;
+  width: 17em;
+  border-radius: 2px;
+/*  width: 280px;*/
+  margin-right: 5px;
+  margin-top: 5px;
+  text-align: center;
+
+}
+
+/*#product_search:hover
+{
+  width: 30px;
+}
+*/
+
+
+#product_search,#search_button
+{
+
+ float: left;
+ margin-top: 15px;
+}
+#nav_ol li a
+{text-decoration: none;font-family: "Helvetica Neue",Helvetica,sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    color:white;
+     
+  }
+
+#nav_ol li a:hover
+{
+   color: tomato;
+   text-transform: capitalize;
+   text-decoration: underline;
+
+
+}
+
+#nav_ol li a #cart
+{
+  color: yellow;
+}
+
+/*#akhil
+{
+  margin-top: 20px;
+}
+*/
+#subtitle
+{
+  max-width: 750px;
+    margin: 0 auto 20px;
+    /*font-size: 28px;*/
+    font-weight: 300;
+    line-height: 38px;
+    color: pink;
+   /* margin-bottom: 30px;*/
+    font-size: 41px;
+    line-height: 60px;
+    font-family: 'Open Sans', sans-serif;
+   /* position: absolute;
+    margin-left: 275px;
+    margin-top: 1px;*/
+   /* font-style: italic;*/
+}
+#subtitle_div
+{
+
+   position: absolute;
+    margin-left: 275px;
+    margin-top: 50px;
+}
+
+#gradient
+{
+  /* background: url('code.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+ /*  padding-top: 350px;*/
+  margin-top: 0px;
+  height: 900px;
+  max-width:auto; 
+  background-size: container;
+  background-image: linear-gradient(45deg,#0a1855 0%,#da0024 100%);
+  margin-bottom: 20px;
+
+}
+               /*      footer styles*/
+footer
+{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: auto;
+    padding: 80px;
+}
+#first_ol
+{
+  margin: 10px;
+}
+
+#first_ol li,#second_col
+{
+  list-style-type: none;
+  margin-bottom: 10px;
+
+
+}
+
+#first_ol li a
+{
+
+text-decoration: none;
+color: white;
+}
+
+#second_col li a
+{
+  text-decoration: none;
+  color: white;
+
+}
+
+#first_ol li a:hover,#second_col li a:hover
+{
+  text-decoration: underline;
+}
+
+
+#newsletter form
+{
+  margin-left: 20px;
+  float: left;
+}
+
+#email_subscribe
+{
+  width: 300px;
+  height: 40px;
+
+
+}
+
+#subscribe_button
+{
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #a62436;
+  color: #fff;
+  border: none;
+  cursor: pointer
+}
+
+#subscribe_button:hover
+{ border-radius: 5px;
+  background-color: #739CE6;
+}
+
+                    /*  branch code picking  syles    */
+
+/*.box
+{
+  border:2px solid black;
+  max-width:120px; 
+  max-height: 100px;
+  margin: 10px;
+  display: inline;
+}*/
+
+#branch
+{
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+ /* float: left;*/
+  border:2px solid black;
+  margin-bottom: 20px;
+  overflow: scroll;
+
+}
+
+ input[type="checkbox"]
+{
+    margin: 3px 3px 3px 4px;
+     
+    
+
+}
+
+
+
+                          /* CSS CODE FOR SIGNUP.HTML STARTS HERE         */
+.signin_container
+{
+
+  position: fixed;
+  
+   margin: 160px 0 0 400px;
+   width: auto;
+   height: auto;
+   padding: 35px;
+   border: 3px solid #5fcf80;
+   border-radius: 4px;
+     border-top: 45px solid #5fcf80;
+}
+
+#signin_header,#signup_header
+{
+	text-align: center;
+	color: yellow;
+     margin-bottom: 20px;
+}
+
+input[type="email"],input[type="password"]
+{
+   width: 350px;
+   height: 30px;
+   padding: 5px;
+   text-align: center;
+   
+   /*border-radius: 1px;*/
+   color: black;
+   white-space: nowrap;
+   background-color: white;
+   font-family: "Courier New", Courier, monospace;
+   font-style: italic;
+   font-size:16px;
+   font-weight: 500; 
+}
+
+
+
+input[type="password"] ,input[type="checkbox"],input[type="submit"]
+{
+	margin-top: 10px;
+}
+
+#signup_button,#signin_button
+{
+     width: 360px;
+     height: 50px;
+     background-color: #5fcf80;
+     border: 2px solid #5fcf80;
+      
+     color: #FFF;
+     font-size: 16px;
+     border-radius: 3px; 
+     padding: 5px;
+     font-style: bolder;
+     letter-spacing: 4px;
+}
+
+#signup_button:hover,#signin_button:hover
+{
+
+background-color: #FFF;
+color: #5fcf80;
+border:2px solid #5fcf80;
+
+}
+
+#keep_me_login{display: inline;}
+
+#back_to_home
+{
+
+	color:black;
+	margin-left: 125px;
+	margin-top: 20px;
+}
+
+#back_to_home:hover
+{
+	text-decoration: none;
+	color: black;
+}
+
+#signin_check_error
+{
+
+  color:black;
+  margin-left: 125px;
+  margin-top: 20px; 
+}
+/*#not_a_user
+{
+
+    display: inline;
+	color:black;
+	margin-left: 5px;
+    margin-top: 3px;
+}
+*/
+                    /*  CODE FOR SIGNUP.HTML ENDS HERE          */
+
+
+
+
+
+                                                                                */
+
+
+
+

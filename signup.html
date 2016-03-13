@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN UP</title>
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+<body>
+
+<form action="new_user.php" method="post">
+<div class="signin_container">
+
+      <input type="email" id="signup_email" onkeyup="signup_key()" name="email" placeholder="enter your email"><label id="signup_error"></label></br>
+
+      <input type="password" id="signup_password" onkeyup="signup_password_key()"  name="password"  maxlength="10" placeholder="enter your password"><label id="signup_error1"></label></br>
+
+      <input type="password" id="signup_password1" onKeyup="signup_password_key1()" name="password1" maxlength="10" placeholder="enter your password again"><label id="signup_error2"></label></br>
+   
+   
+
+       <input type="submit" id="signup_button"onclick="signup_check()" name="button" value="SIGN UP"></br>
+
+</div>
+
+</form>
+
+<script src="js/main.js"></script>
+</body>
+</html>

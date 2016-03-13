@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>SIGNIN</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<form action="user_check.php" method="post">
+   
+
+    <div class="signin_container">
+      <!-- <h4 id="signin_header">SIGNIN HERE</h4> -->
+      <input type="email" onKeyup="signin_key()" id="signin_email" name="email" placeholder="enter your email"><label id="signin_error"></label></br>
+
+    
+
+      <input type="password" onKeyup="password_check()" name="password" minlength="4" maxlength="10" id="signin_password" placeholder="enter your password"><label id="signin_error1"></label></br>
+
+      <input type="checkbox" name="checkbox" value="keep me login">
+      <p id="keep_me_login">keep me login</p></br>
+
+      <input type="submit" id="signup_button" onclick="signin_check()"  name="button" value="SIGN IN"></br>
+      <label id="siginin_check_error"></label>
+
+      <p><a href="/index.html" id="back_to_home">back to homepage</p>
+     <!--  <p><a href="/index.html" id="not_a_user">not a user yet?</p>  -->
+    </div>
+</form>
+
+<script src="js/main.js"></script>
+</body>
+</html>
