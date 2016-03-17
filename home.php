@@ -12,8 +12,27 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-   
+  
+  <style>
+#france{
+
+  color:tomato;
+  display: inline-block;
+font-size: 24px;
+list-style-type:none;
+border: 2px solid black;
+padding:30px;}
+
+.italy{
+  margin: 50px 150px 150px  150px;
+
+}
+
+  </style>
+
   </head>
+
+
   <body>
         
     <!------ ----------------------body begind------------------------------ -->
@@ -142,7 +161,50 @@
 
 
 
-<!-- =============================cellar window code ends here=========================================== -->
+<!-- ========================  cellar window code ends here  ==================== -->
+
+
+<?php
+include_once 'putin.php';
+
+
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+$sql="SELECT * from user_details";
+
+if ($result=mysqli_query($conn,$sql))
+  {
+  // Fetch one and one row
+
+    
+  while ($row=mysqli_fetch_row($result))
+    {
+      //echo "<tr>";
+      echo "
+    <div class='italy' 
+    <h3 id='france'>$row[1]<h3>
+    </div>
+
+";
+  
+   
+    }
+ 
+  mysqli_free_result($result);
+}
+
+mysqli_close($con);
+
+
+?>
+
+
+
+
+
 
  
      <!-- ------------------------body ends------------------------------------------- -->
