@@ -24,13 +24,22 @@ list-style-type:none;
 padding:30px;}
 
 .italy{
-  margin: 50px 150px 150px  150px;
+  margin: 50px 120px 120px  120px;
 
 }
 
   </style>
 
-  </head>
+  <script>
+
+function add_to_cart()
+{
+  document.getElementById('add_to_cart').value+=1;
+}
+
+  </script>
+
+    </head>
 
 
   <body>
@@ -116,7 +125,7 @@ padding:30px;}
           </ul>
 
 
-      <li><a href="#">Cart<span style="margin-left:3px;" class="badge">2</span></a></li> 
+      <li><a href="#">Cart<span style="margin-left:3px;" id="add_to_cart" class="badge">2</span></a></li> 
 
         
 
@@ -195,9 +204,16 @@ if ($result=mysqli_query($conn,$sql))
     {
       //echo "<tr>";
       echo "
-    <div class='italy' 
+  
+     <div class='col-md-4'>
+     </div>
+
+     
+    <div class='col-md-8'>
+    <div class='italy'> 
     <h3 id='france'>$row[1]<h3>
-    <button type='button' class='btn btn-primary'> Add to Cart</button>
+    <button type='button' onclick='add_to_cart()' class='btn btn-primary'> Add to Cart</button>
+    </div>
     </div>
 
 ";
