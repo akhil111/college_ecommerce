@@ -20,7 +20,7 @@
   display: inline-block;
 font-size: 24px;
 list-style-type:none;
-border: 2px solid black;
+/*border: 2px solid black;*/
 padding:30px;}
 
 .italy{
@@ -98,7 +98,12 @@ padding:30px;}
       <ul class="nav navbar-nav navbar-right">
         <!-- <li><a href="#">Link</a></li> -->
         <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <?php echo "bangbang";?> <span class="caret"></span></a>
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <?php echo "akhil.maddu021@gmail.com";?> <span class="caret"></span></a>
+
+
+       
+
+
           <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  <span class="caret"></span></a> -->
           <ul class="dropdown-menu">
            
@@ -109,6 +114,12 @@ padding:30px;}
             <li role="separator" class="divider"></li>
             
           </ul>
+
+
+      <li><a href="#">Cart<span style="margin-left:3px;" class="badge">2</span></a></li> 
+
+        
+
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -186,6 +197,7 @@ if ($result=mysqli_query($conn,$sql))
       echo "
     <div class='italy' 
     <h3 id='france'>$row[1]<h3>
+    <button type='button' class='btn btn-primary'> Add to Cart</button>
     </div>
 
 ";
