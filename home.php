@@ -17,28 +17,32 @@
 #france{
 
   color:tomato;
-  display: inline-block;
+  display: inline;
 font-size: 24px;
 list-style-type:none;
 /*border: 2px solid black;*/
 padding:30px;}
 
 .italy{
-  margin: 50px 120px 120px  120px;
+/*  margin: 50px 120px 120px  120px;*/
+
 
 }
 
   </style>
 
-  <script>
 
-function add_to_cart()
-{
-  document.getElementById('add_to_cart').value+=1;
-}
+<script>
+    
+    function add_to_cart() {
+        
+        var akhil=parseInt(document.getElementById('add_to_cart').innerHTML+=1);
+      
+       
+       
+    }
 
-  </script>
-
+</script>
     </head>
 
 
@@ -205,14 +209,14 @@ if ($result=mysqli_query($conn,$sql))
       //echo "<tr>";
       echo "
   
-     <div class='col-md-4'>
-     </div>
 
      
-    <div class='col-md-8'>
+    <div class='col-md-12'>
     <div class='italy'> 
+    <h3 id='france'>$row[0]<h3>
     <h3 id='france'>$row[1]<h3>
     <button type='button' onclick='add_to_cart()' class='btn btn-primary'> Add to Cart</button>
+    <hr style=''>
     </div>
     </div>
 
