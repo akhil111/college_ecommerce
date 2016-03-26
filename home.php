@@ -79,7 +79,7 @@ padding:30px;}
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
          
-         <li  data-toggle="modal" data-target="#myModal"><a href="#">Sell</a></li>
+         <li  data-toggle="modal" data-target="#myModal"><a href="book_upload.php">Sell</a></li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Branches<span class="caret"></span></a>
@@ -197,7 +197,8 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-$sql="SELECT * from user_details";
+//$sql="SELECT * from user_details";
+$sql="SELECT * FROM  book_details";
 
 if ($result=mysqli_query($conn,$sql))
   {

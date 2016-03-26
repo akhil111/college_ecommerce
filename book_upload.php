@@ -15,7 +15,7 @@ if($conn)
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Product upload</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -92,6 +92,9 @@ input[type="submit"]:hover
 
 
 <body style="background-color:white;">
+
+<h4><a href="home.php">Back to Home</a></h4>
+
 <center>
 <div>
 <form action="book_upload.php" method="post" enctype="multipart/form-data">
@@ -120,12 +123,26 @@ input[type="submit"]:hover
 if(isset($_POST['submit']))
 
 {
-	
+	$save_path="/uploads";//// Folder where you wanna move the file.
+	 $myname = strtolower($_FILES['book_image']['tmp_name']); //You are renaming the file here
+	 $russia=move_uploaded_file($_FILES['image']['tmp_name'], $save_path.$myname); // Move the uploaded file to the desired folder
+
+    echo $russia;
 	$book_name=$_POST['book_name'];
-		$book_pr=$_POST['book_price'];
-			$book_branch=$_POST['book_branch'];
-			
-			$akhil=$_FILES['book_image']['name'];
+    $book_pr=$_POST['book_price'];
+	$book_branch=$_POST['book_branch'];
+    $akhil=$_FILES['book_image']['name'];
+
+    echo $book_name;
+    if(is_dir($book_name))
+    {
+    	echo "a directory with the name exists<br>";
+    }
+
+    else
+    {
+    	echo "directory does not exists<br>";
+    }
 
 
 $query="INSERT INTO book_details VALUES('$book_name','$book_pr','$book_branch','$akhil')";
