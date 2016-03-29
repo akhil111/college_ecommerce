@@ -22,6 +22,7 @@ html
 {
 	height: 100%;
 	background-image:url('code.jpg') ;
+	background-image: url('http://www.camposanto.com/external/wallpapers/Launch_Yellow/FWY_3440x1440.jpg');
 	background-size: cover; 
 }
 
@@ -42,12 +43,17 @@ width:84%;}
 	margin-top: 27px;
 	margin-left: 60px;
 	
-	color: pink;
+	color: white;
 
 	font-weight: 900;
 	cursor: pointer;
 	color: tomato;
 	
+}
+
+#nav li a 
+{
+	color: white;
 }
 
 
