@@ -22,7 +22,7 @@ html
 {
 	height: 100%;
 	background-image:url('code.jpg') ;
-	background-image: url('http://www.camposanto.com/external/wallpapers/Launch_Yellow/FWY_3440x1440.jpg');
+	/*background-image: url('http://www.camposanto.com/external/wallpapers/Launch_Yellow/FWY_3440x1440.jpg');*/
 	background-size: cover; 
 }
 
