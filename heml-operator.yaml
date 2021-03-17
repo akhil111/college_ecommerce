@@ -1,0 +1,15 @@
+
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: fluxcd-demo
+  namespace: default
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: fluxcd-demo
+  targetNamespace: fluxcd-demo
+  chart:
+    git: git@github.com:akhil111/flux.git
+    path: flux/demo-chart
+    ref: fluxcd-demo
